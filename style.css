@@ -1,1 +1,16 @@
-  
+:root {
+  --accent-color: #eb9b64;
+  --bg-color: #282221;
+  --bg-color-transparent: rgba(40, 34, 33, 0.75);
+  --text-color: #ffffff;
+  --light-bg-color: #433938;
+  --description-color: ##c0c0c0;
+  --header-fw: 700;
+  --header-one-fs: 3rem;
+  --header-two-fs: 2rem;
+  --header-three-fs: 1.5rem;
+  --paragraph-fw: 400;
+  --paragraph-large-fs: 1.5rem;
+  --paragraph-default-fs: 1rem;
+  --default-fs: 16px;
+}
