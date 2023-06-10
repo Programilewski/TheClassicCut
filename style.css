@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze:wght@100;400;700&display=swap");
+
 :root {
   --accent-color: #eb9b64;
   --bg-color: #282221;
-  --bg-color-transparent: rgba(0, 0, 0, 0.75);
+  --bg-color-transparent: rgba(0, 0, 0, 0.25);
   --text-color: #ffffff;
   --light-bg-color: #433938;
   --description-color: ##c0c0c0;
@@ -12,7 +14,14 @@
   --paragraph-fw: 400;
   --paragraph-large-fs: 1.5rem;
   --paragraph-default-fs: 1rem;
+  --thin-fw: 100;
   --default-fs: 16px;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Grenze", serif;
+  line-height: 1.5;
 }
 .nav {
   width: 100vw;
@@ -66,6 +75,56 @@
 .nav__link:hover {
   color: var(--accent-color);
 }
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section--bg-image-color {
+  background: linear-gradient(#282221c4, #282221c4), url("img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-section__title {
+  font-size: var(--header-one-fs);
+  font-weight: var(--header-fw);
+  text-align: center;
+  margin: 2rem 2rem 0 2rem;
+}
+.hero-section__description {
+  max-width: 30rem;
+  font-size: var(--paragraph-large-fs);
+  font-weight: var(--thin-fw);
+  text-align: center;
+  margin: 0 2rem;
+}
+.button {
+  display: inline-block;
+}
+.button--default {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-family: "Grenze", serif;
+  font-size: var(--header-two-fs);
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
