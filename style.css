@@ -16,6 +16,7 @@
   --paragraph-default-fs: 1rem;
   --thin-fw: 100;
   --default-fs: 16px;
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--bg-color);
@@ -82,7 +83,7 @@ body {
 }
 .hero-section {
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
