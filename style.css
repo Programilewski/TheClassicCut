@@ -174,4 +174,7 @@ body {
     width: fit-content;
     gap: 2rem;
   }
+  .prices__item {
+    grid-column: span 2;
+  }
 }
