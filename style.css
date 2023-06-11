@@ -92,7 +92,7 @@ body {
   font-size: var(--header-one-fs);
   font-weight: var(--header-fw);
   text-align: center;
-  margin: 2rem 2rem 0 2rem;
+  margin: 5rem 3rem 0 3rem;
 }
 .hero-section__description {
   max-width: 30rem;
