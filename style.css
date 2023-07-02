@@ -153,6 +153,100 @@ body {
   grid-column: span 3;
   color: var(--description-color);
 }
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.tile {
+  text-align: center;
+  width: 100%;
+  max-width: 25rem;
+  min-height: 20rem;
+}
+.tile__header {
+  font-size: var(--header-three-fs);
+  background-color: rgb(70, 60, 58);
+  padding: 0.5rem 0;
+}
+.tile__description {
+  text-align: justify;
+  padding: 1rem;
+}
+.tile--bg-image {
+  background: linear-gradient(rgba(40, 34, 33, 0.85), rgba(40, 34, 33, 0.95)),
+    url("img/img1.jpg");
+  background-size: cover;
+}
+.tile--bg-image:nth-child(2) {
+  background: linear-gradient(rgba(40, 34, 33, 0.85), rgba(40, 34, 33, 0.95)),
+    url("img/img2.jpg");
+}
+.tile--bg-image:nth-child(3) {
+  background: linear-gradient(rgba(40, 34, 33, 0.85), rgba(40, 34, 33, 0.95)),
+    url("img/img3.jpg");
+}
+.tile--bg-image:nth-child(4) {
+  background: linear-gradient(rgba(40, 34, 33, 0.85), rgba(40, 34, 33, 0.95)),
+    url("img/img4.jpg");
+}
+.carousell {
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.581);
+  height: 80vh;
+}
+.carousell__wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 0, 0, 0.461);
+  position: relative;
+}
+.carousell__image {
+  transition: 1s;
+  align-self: center;
+  flex-shrink: 0;
+  width: 10vw;
+  aspect-ratio: 3/5;
+  position: absolute;
+  object-fit: cover;
+  transform: translateX(175%) scale(0.75);
+  opacity: 0;
+}
+.carousell__image:nth-child(1) {
+  filter: brightness(0.1);
+  z-index: 1;
+  transform: translateX(-100%) scale(0.75);
+  opacity: 1;
+}
+.carousell__image:nth-child(2) {
+  transform: translateX(-50%) scale(1);
+  z-index: 2;
+  filter: brightness(0.4);
+  opacity: 1;
+}
+.carousell__image:nth-child(3) {
+  z-index: 3;
+  transform: translateX(0) scale(1.5);
+  opacity: 1;
+}
+.carousell__image:nth-child(4) {
+  z-index: 2;
+  filter: brightness(0.4);
+  transform: translateX(50%) scale(1);
+  opacity: 1;
+}
+.carousell__image:nth-child(5) {
+  filter: brightness(0.1);
+  transform: translateX(100%) scale(0.75);
+  z-index: 1;
+  opacity: 1;
+}
 /*  */
 /*  */
 /*  */
@@ -177,5 +271,11 @@ body {
   }
   .prices__item {
     grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tile {
+    max-width: 23%;
   }
 }
