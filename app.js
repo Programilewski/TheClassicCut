@@ -6,10 +6,10 @@ window.addEventListener("scroll", () => {
   console.log(window.scrollY);
   if (window.scrollY < 50) {
     navDark.style.backgroundColor = "rgba(0,0,0,0.25)";
-    // navDark.style.borderBottom = "none";
+    navDark.style.borderBottom = "none";
   } else {
     navDark.style.backgroundColor = "rgb(40, 34, 33)";
-    // navDark.style.borderBottom = "1px solid #EB9B64";
+    navDark.style.borderBottom = "1px solid #EB9B64";
   }
 });
 
@@ -65,6 +65,10 @@ const moveItems = (direction) => {
           image.style.filter = "brightness(.1)";
           image.style.opacity = 1;
           break;
+        default:
+          image.style.transform = "translateX(100%) scale(0.75)";
+          image.style.opacity = 0;
+          image.zIndex = 1;
       }
     });
   } else if (direction === "right") {
@@ -107,6 +111,10 @@ const moveItems = (direction) => {
           image.style.filter = "brightness(.1)";
           image.style.opacity = 1;
           break;
+        default:
+          image.style.transform = "translateX(100%) scale(0.75)";
+          image.style.opacity = 0;
+          image.zIndex = 1;
       }
     });
   }

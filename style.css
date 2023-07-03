@@ -159,8 +159,8 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  justify-content: center;
-  max-width: 90%;
+  justify-content: space-around;
+  /* max-width: 90%; */
   margin: 0 auto;
 }
 .tile {
@@ -218,10 +218,10 @@ body {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
-  transition: 0.3s;
+  transition: 0.2s ease-out;
   align-self: center;
   width: 40vw;
-  aspect-ratio: 4/7;
+  aspect-ratio: 2/3;
   position: absolute;
   object-fit: cover;
   transform: translateX(175%) scale(0.75);
@@ -305,5 +305,11 @@ body {
 @media only screen and (min-width: 1200px) {
   .tile {
     max-width: 23%;
+  }
+  .carousell {
+    height: 65vh;
+  }
+  .carousell__image {
+    width: 13vw;
   }
 }
