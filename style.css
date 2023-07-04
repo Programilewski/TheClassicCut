@@ -16,6 +16,10 @@
   --paragraph-default-fs: 1rem;
   --thin-fw: 100;
   --default-fs: 16px;
+  --small-gap: 0.5rem;
+  --medium-gap: 1rem;
+  --large-gap: 2rem;
+  --extra-large-gap: 5rem;
   scroll-behavior: smooth;
 }
 body {
@@ -396,7 +400,7 @@ body {
 }
 .contactInfo {
   display: flex;
-  margin: 5girrem 0;
+  margin: 5rem 0;
   flex-wrap: wrap;
   width: 100%;
   gap: 5rem;
@@ -426,13 +430,35 @@ body {
   width: 100%;
 }
 .footerContent {
+  height: 20vh;
+
+  background-color: var(--light-bg-color);
+}
+.footerContent__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 20vh;
   justify-content: space-around;
-  background-color: var(--light-bg-color);
+  height: 100%;
+}
+.footerContent__list svg {
+  padding: 1rem;
+}
+.footerContent__facebook {
+  fill: #17a9fd;
+}
+.footerContent__instagram {
+  fill: #c13584;
+}
+.footerContent__item--links a {
+  color: white;
+}
+.footerContent__item--links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 /*  */
 /*  */
