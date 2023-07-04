@@ -396,7 +396,7 @@ body {
 }
 .contactInfo {
   display: flex;
-  margin: 5rem 0;
+  margin: 5girrem 0;
   flex-wrap: wrap;
   width: 100%;
   gap: 5rem;
@@ -424,6 +424,15 @@ body {
 .contactInfo__map iframe {
   height: 100%;
   width: 100%;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  justify-content: space-around;
+  background-color: var(--light-bg-color);
 }
 /*  */
 /*  */
