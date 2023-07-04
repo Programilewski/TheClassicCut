@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -220,7 +224,59 @@
       </section>
       <section class="section" id="contact">
         <h2 class="section__title">Kontakt</h2>
-        <article class="section__content"></article>
+        <article class="section__content">
+          <div class="contactInfo">
+            <ul class="contactInfo__list">
+              <li class="contactInfo__item">
+                <span class="material-symbols-outlined contactInfo__icon">
+                  alternate_email
+                </span>
+                <div class="contactInfo__key">E-mail</div>
+                <div class="contactInfo__value">info@theclassiccut.pl</div>
+              </li>
+              <li class="contactInfo__item">
+                <span class="material-symbols-outlined"> phone_iphone </span>
+                <div class="contactInfo__key">Numer telefonu</div>
+                <div class="contactInfo__value">737 906 870</div>
+              </li>
+              <li class="contactInfo__item">
+                <span class="material-symbols-outlined"> location_on </span>
+                <div class="contactInfo__key">Adres</div>
+                <div class="contactInfo__value">
+                  Powstańców Warszawy 5, 05-400, Otwock
+                </div>
+              </li>
+              <li class="contactInfo__item contactInfo__item--hours">
+                <span class="material-symbols-outlined"> hourglass_full </span>
+                <div class="contactInfo__key">Poniedziałek - Piątek</div>
+                <div class="contactInfo__value">9:00 - 20:00</div>
+              </li>
+              <li class="contactInfo__item contactInfo__item--hours">
+                <span class="material-symbols-outlined">
+                  hourglass_bottom
+                </span>
+                <div class="contactInfo__key">Sobota</div>
+                <div class="contactInfo__value">9:00 - 17:00</div>
+              </li>
+              <li class="contactInfo__item contactInfo__item--hours">
+                <span class="material-symbols-outlined"> hourglass_empty </span>
+                <div class="contactInfo__key">Niedziela</div>
+                <div class="contactInfo__value">Nieczynne</div>
+              </li>
+            </ul>
+            <div class="contactInfo__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14225.082763435486!2d21.0283826690617!3d52.24201210655891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc661b455407%3A0x2019a146fb49c9be!2sThe%20Royal%20Castle%20in%20Warsaw!5e0!3m2!1sen!2spl!4v1688497645302!5m2!1sen!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </article>
       </section>
     </div>
   </body>
