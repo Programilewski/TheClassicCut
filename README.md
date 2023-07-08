@@ -5,7 +5,7 @@ https://classiccut.netlify.app/
 A simple responsive website for a barbershop.
 Created with BEM methodology.
 Screenshots:
-![Header](https://i.ibb.co/7vrG0bJ/screen1.png)
+![Header](https://i.ibb.co/8MPjQXD/screen1.png)
 ![Pricelist](https://i.ibb.co/nw4Qktj/screen2.png)
 ![About Us](https://i.ibb.co/bzcbfhV/screen3.png)
 ![Gallery](https://i.ibb.co/g3yY41y/screen4.png)
