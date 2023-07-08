@@ -399,12 +399,13 @@ body {
   right: 0;
 }
 .contactInfo {
+  flex-direction: column;
   display: flex;
   margin: 5rem 0;
   flex-wrap: wrap;
   width: 100%;
   gap: 5rem;
-  height: 50lvh;
+  min-height: 50lvh;
 }
 .contactInfo__list {
   width: 100%;
@@ -427,6 +428,7 @@ body {
 .contactInfo__map,
 .contactInfo__map iframe {
   height: 100%;
+  min-height: 30vh;
   width: 100%;
 }
 .footerContent {
@@ -443,13 +445,20 @@ body {
   height: 100%;
 }
 .footerContent__list svg {
-  padding: 1rem;
+  padding: 0.5rem;
+  transition: 0.2s;
 }
 .footerContent__facebook {
   fill: #17a9fd;
 }
+.footerContent__facebook:hover {
+  fill: #a6deff;
+}
 .footerContent__instagram {
   fill: #c13584;
+}
+.footerContent__instagram:hover {
+  fill: #ff66bd;
 }
 .footerContent__item--links a {
   color: white;
@@ -496,6 +505,8 @@ body {
   }
   .contactInfo {
     flex-wrap: nowrap;
+    flex-direction: row;
+    height: 50lvh;
   }
 }
 
