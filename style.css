@@ -383,12 +383,11 @@ body {
 }
 .carousell__left,
 .carousell__right {
+  user-select: none;
   position: absolute;
   font-size: 2rem;
   font-weight: 700;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 0 1rem;
   color: var(--accent-color);
